@@ -1,0 +1,7 @@
+{
+  "name": "zpgsa",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
