@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --stop-color: #488fe9;
+    --stop-border: #9ca3af;
+
+    --bus-border: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.line-number {
+    position: absolute;
+    transform: translateY(27px);
+    text-shadow: 0 0 4px #fff;
+    color: #000;
+    width: 100%;
+    text-align: center;
+}
+
+.bus {
+    border: 1px solid #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-weight: 600;
+    border-radius: 100%;
+    z-index: 10;
+}
+
+.bus-late {
+    background-image: url("../img/bus_late.png");
+}
+
+.bus-ahead {
+    background-image: url("../img/bus_ahead.png");
+}
+
+.bus-on-time {
+    background-image: url("../img/bus_on_time.png");
+}
+
+.stop-icon {
+    color: #fff;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--stop-color);
+}
+
+svg.leaflet-attribution-flag {
+    display: none !important;
+    visibility: hidden !important;
+}
