@@ -22,7 +22,7 @@ function BusesContainer() {
             axios
                 .get(`${baseApi}/buses`)
                 .then((data) => setBuses(data.data))
-                .catch(() => {});
+                .catch(() => undefined);
         }, 500);
 
         return () => clearInterval(interval);

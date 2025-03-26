@@ -16,13 +16,6 @@ const Home = () => {
 
   return (
       <IonPage>
-          <IonHeader>
-              <IonToolbar>
-                  <IonButton onClick={updateData}>
-                      <IonIcon icon={refresh}></IonIcon>
-                  </IonButton>
-              </IonToolbar>
-          </IonHeader>
           <IonContent fullscreen>
               <MyMap/>
           </IonContent>
